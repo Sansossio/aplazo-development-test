@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Java Program",
+      "request": "launch",
+      "mainClass": "mx.aplazo.backend_test.juliosansossio.AplazoInterestMS",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
