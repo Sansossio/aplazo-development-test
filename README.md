@@ -38,3 +38,16 @@ I have created two applications:
 - [Aplazo interest ms (NodeJS)](./node/)
 
 This is because my main language is NodeJS and I wanted to show you all my skills in NodeJS.
+
+## Run applications
+
+If you want to start both applications you can use the following commands:
+
+```sh
+docker-compose up spring
+docker-compose up nodejs
+```
+
+### Open Api specs
+- Spring: click [http://localhost:3001/api](http://localhost:3001/api)
+- NodeJS: click [http://localhost:3000/api](http://localhost:3000/api)
