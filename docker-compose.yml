@@ -1,0 +1,21 @@
+version: '3'
+services:
+  spring:
+    container_name: aplazo-interest-spring
+    build:
+      context: java+spring
+      dockerfile: Dockerfile
+    env_file: ./java+spring/.env
+    ports:
+      - '3001:3001'
+  nodejs:
+    container_name: aplazo-interest-nodejs
+    build:
+      context: node
+      dockerfile: Dockerfile
+    env_file: ./node/.env
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - '3000:3000'
