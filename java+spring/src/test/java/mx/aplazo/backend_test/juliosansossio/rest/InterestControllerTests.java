@@ -32,4 +32,16 @@ public class InterestControllerTests {
     interestController.calculate(new CalculateInterest());
     verify(interestService, times(1)).calculate(Mockito.any());
   }
+
+  @Test
+  public void shouldCallRepositorySaveMethodOneTime() {
+    CalculateInterest calculateInterest = new CalculateInterest();
+    calculateInterest.setAmount(100.0);
+    calculateInterest.setTerms(3);
+    calculateInterest.setRate(0.1);
+
+    interestController.calculate(calculateInterest);
+
+    verify(interestService, times(1)).save(Mockito.any());
+  }
 }

@@ -1,12 +1,9 @@
 package mx.aplazo.backend_test.juliosansossio.service;
 
-import static org.mockito.Mockito.verify;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.times;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -55,17 +52,5 @@ public class InterestServiceCalculateTests {
     Double shouldBe = calculateInterest.getAmount() + (calculateInterest.getAmount() * calculateInterest.getRate() / 100);
 
     assertEquals(sum, shouldBe);
-  }
-
-  @Test
-  public void shouldCallRepositorySaveMethodOneTime() {
-    CalculateInterest calculateInterest = new CalculateInterest();
-    calculateInterest.setAmount(100.0);
-    calculateInterest.setTerms(3);
-    calculateInterest.setRate(0.1);
-
-    interestService.calculate(calculateInterest);
-
-    verify(mockInterestRepository, times(1)).save(Mockito.any());
   }
 }
