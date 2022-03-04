@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InterestService should calculate decimal interest response 1`] = `
+Array [
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 1,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 2,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 3,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 4,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 5,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 6,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 7,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 8,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 9,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 10,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 11,
+  },
+  Object {
+    "amount": 84.375,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 12,
+  },
+]
+`;
+
+exports[`InterestService should calculate exact interest response 1`] = `
+Array [
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 1,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 2,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 3,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 4,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 5,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 6,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 7,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 8,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 9,
+  },
+  Object {
+    "amount": 110,
+    "payment_date": 2022-04-04T00:00:00.000Z,
+    "payment_number": 10,
+  },
+]
+`;

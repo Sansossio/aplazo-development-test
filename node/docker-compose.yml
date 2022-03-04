@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    container_name: aplazo-interest-ms-nodejs
+    build: .
+    env_file: .env
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - '3000:3000'

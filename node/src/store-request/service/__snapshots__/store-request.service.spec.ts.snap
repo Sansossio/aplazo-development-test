@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store Request Service Get events should match filters 1`] = `
+Object {
+  "order": Object {
+    "id": "DESC",
+  },
+  "take": 10,
+}
+`;
+
+exports[`Store Request Service Get events should return the events 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "request": "{}",
+    "response": "{}",
+  },
+  Object {
+    "id": 2,
+    "request": "{}",
+    "response": "{}",
+  },
+]
+`;

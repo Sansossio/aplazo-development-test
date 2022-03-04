@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "command": "yarn start:dev",
+      "name": "Run and debug watch mode",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}
