@@ -10,16 +10,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import mx.aplazo.backend_test.juliosansossio.domain.CalculateInterest;
-import mx.aplazo.backend_test.juliosansossio.service.InterestService;
+import mx.aplazo.backend_test.juliosansossio.service.InterestServiceImpl;
 
 @SpringBootTest(properties = "spring.main.lazy-initialization=true",
-classes = {InterestController.class})
+classes = {InterestControllerImpl.class})
 public class InterestControllerTests {
   @Autowired
-  InterestController interestController;
+  InterestControllerImpl interestController;
 
   @MockBean
-  InterestService interestService;
+  InterestServiceImpl interestService;
 
   @Test
   public void shouldCallServiceListMethod () {

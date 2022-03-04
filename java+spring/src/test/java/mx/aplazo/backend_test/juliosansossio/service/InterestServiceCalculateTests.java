@@ -16,10 +16,10 @@ import mx.aplazo.backend_test.juliosansossio.domain.CalculateInterest;
 import mx.aplazo.backend_test.juliosansossio.domain.CalculateInterestResponse;
 import mx.aplazo.backend_test.juliosansossio.repository.InterestRepository;
 
-@SpringBootTest(properties = "spring.main.lazy-initialization=true", classes = { InterestService.class })
+@SpringBootTest(properties = "spring.main.lazy-initialization=true", classes = { InterestServiceImpl.class })
 public class InterestServiceCalculateTests {
   @Autowired
-  InterestService interestService;
+  InterestServiceImpl interestService;
 
   @MockBean
   InterestRepository mockInterestRepository;
