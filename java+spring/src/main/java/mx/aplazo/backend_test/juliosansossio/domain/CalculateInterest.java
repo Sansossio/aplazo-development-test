@@ -4,7 +4,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
 
+@Data
 public class CalculateInterest {
   @Positive
   @NotNull
@@ -19,32 +21,4 @@ public class CalculateInterest {
   @NotNull
   @Schema(description = "The interest rate", defaultValue = "5")
   Double rate;
-
-  public CalculateInterest() {
-  }
-
-  public Double getAmount() {
-    return amount;
-  }
-
-  public void setAmount(Double amount) {
-    this.amount = amount;
-  }
-
-  public Integer getTerms() {
-    return terms;
-  }
-
-  public void setTerms(Integer terms) {
-    this.terms = terms;
-  }
-
-  public Double getRate() {
-    return rate;
-  }
-
-  public void setRate(Double rate) {
-    this.rate = rate;
-  }
-
 }

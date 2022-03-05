@@ -6,8 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Entity
 @Table(name = "interest")
+@Data
 public class Interest {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,27 +18,10 @@ public class Interest {
   private String request;
   private String response;
 
-  public Interest(String request, String response) {
-    this.request = request;
-    this.response = response;
-  }
-
-  public Interest() {
-  }
-
   public static Interest create(String request, String response) {
-    return new Interest(request, response);
-  }
-
-  public Long getId() {
-    return id;
-  }
-
-  public String getRequest() {
-    return request;
-  }
-
-  public String getResponse() {
-    return response;
+    Interest interest = new Interest();
+    interest.setRequest(request);
+    interest.setResponse(response);
+    return interest;
   }
 }
