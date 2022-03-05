@@ -1,5 +1,6 @@
 package mx.aplazo.backend_test.juliosansossio.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +16,11 @@ public class Interest {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
+
+  @Column(columnDefinition = "text")
   private String request;
+
+  @Column(columnDefinition = "text")
   private String response;
 
   public static Interest create(String request, String response) {
