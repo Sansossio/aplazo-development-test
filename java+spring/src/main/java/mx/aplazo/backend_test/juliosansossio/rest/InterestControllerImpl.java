@@ -3,6 +3,8 @@ package mx.aplazo.backend_test.juliosansossio.rest;
 import java.io.IOException;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 import mx.aplazo.backend_test.juliosansossio.domain.CalculateInterest;
 import mx.aplazo.backend_test.juliosansossio.domain.CalculateInterestResponse;
 import mx.aplazo.backend_test.juliosansossio.domain.Interest;
-import mx.aplazo.backend_test.juliosansossio.service.InterestServiceImpl;
+import mx.aplazo.backend_test.juliosansossio.service.InterestService;
 
 @RestController
 @RequestMapping("/interest")
@@ -26,7 +28,7 @@ import mx.aplazo.backend_test.juliosansossio.service.InterestServiceImpl;
 @Slf4j
 public class InterestControllerImpl implements InterestController {
   @Autowired
-  private InterestServiceImpl interestService;
+  private InterestService interestService;
 
   @GetMapping("list")
   @Operation(summary = "List all interests")
@@ -36,7 +38,7 @@ public class InterestControllerImpl implements InterestController {
 
   @PostMapping("calculate")
   @Operation(summary = "Calculate interest")
-  public List<CalculateInterestResponse> calculate(@RequestBody CalculateInterest body) {
+  public List<CalculateInterestResponse> calculate(@Valid @RequestBody CalculateInterest body) {
     List<CalculateInterestResponse> response = interestService.calculate(body);
 
     ObjectMapper Obj = new ObjectMapper();
